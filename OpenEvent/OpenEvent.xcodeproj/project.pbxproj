@@ -8,6 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		3E13A32B8A725FD65C1AB31D /* libPods-OpenEvent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0881695BBD598C7FEBC3FA3 /* libPods-OpenEvent.a */; };
+		DC1FEBC51C610B1A00AAEF2E /* OEVersion+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1FEBAA1C610B1A00AAEF2E /* OEVersion+CoreDataProperties.m */; };
+		DC1FEBC61C610B1A00AAEF2E /* OEVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1FEBAC1C610B1A00AAEF2E /* OEVersion.m */; };
+		DC1FEBC71C610B1A00AAEF2E /* OEMicroLocation+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1FEBAE1C610B1A00AAEF2E /* OEMicroLocation+CoreDataProperties.m */; };
+		DC1FEBC81C610B1A00AAEF2E /* OEMicroLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1FEBB01C610B1A00AAEF2E /* OEMicroLocation.m */; };
+		DC1FEBC91C610B1A00AAEF2E /* OEEvent+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1FEBB21C610B1A00AAEF2E /* OEEvent+CoreDataProperties.m */; };
+		DC1FEBCA1C610B1A00AAEF2E /* OEEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1FEBB41C610B1A00AAEF2E /* OEEvent.m */; };
+		DC1FEBCB1C610B1A00AAEF2E /* OESponsor+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1FEBB61C610B1A00AAEF2E /* OESponsor+CoreDataProperties.m */; };
+		DC1FEBCC1C610B1A00AAEF2E /* OESponsor.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1FEBB81C610B1A00AAEF2E /* OESponsor.m */; };
+		DC1FEBCD1C610B1A00AAEF2E /* OESpeaker+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1FEBBA1C610B1A00AAEF2E /* OESpeaker+CoreDataProperties.m */; };
+		DC1FEBCE1C610B1A00AAEF2E /* OESpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1FEBBC1C610B1A00AAEF2E /* OESpeaker.m */; };
+		DC1FEBCF1C610B1A00AAEF2E /* OESession+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1FEBBE1C610B1A00AAEF2E /* OESession+CoreDataProperties.m */; };
+		DC1FEBD01C610B1A00AAEF2E /* OESession.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1FEBC01C610B1A00AAEF2E /* OESession.m */; };
+		DC1FEBD11C610B1A00AAEF2E /* OETrack+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1FEBC21C610B1A00AAEF2E /* OETrack+CoreDataProperties.m */; };
+		DC1FEBD21C610B1A00AAEF2E /* OETrack.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1FEBC41C610B1A00AAEF2E /* OETrack.m */; };
 		DC678C741C6076F700E9D6D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC678C731C6076F700E9D6D6 /* main.m */; };
 		DC678C771C6076F700E9D6D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC678C761C6076F700E9D6D6 /* AppDelegate.m */; };
 		DC678C7A1C6076F700E9D6D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC678C791C6076F700E9D6D6 /* ViewController.m */; };
@@ -31,6 +45,34 @@
 /* Begin PBXFileReference section */
 		19BA460C2D1FE9459F980BA2 /* Pods-OpenEvent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenEvent.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenEvent/Pods-OpenEvent.release.xcconfig"; sourceTree = "<group>"; };
 		D0881695BBD598C7FEBC3FA3 /* libPods-OpenEvent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenEvent.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC1FEBA91C610B1A00AAEF2E /* OEVersion+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OEVersion+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DC1FEBAA1C610B1A00AAEF2E /* OEVersion+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OEVersion+CoreDataProperties.m"; sourceTree = "<group>"; };
+		DC1FEBAB1C610B1A00AAEF2E /* OEVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OEVersion.h; sourceTree = "<group>"; };
+		DC1FEBAC1C610B1A00AAEF2E /* OEVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OEVersion.m; sourceTree = "<group>"; };
+		DC1FEBAD1C610B1A00AAEF2E /* OEMicroLocation+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OEMicroLocation+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DC1FEBAE1C610B1A00AAEF2E /* OEMicroLocation+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OEMicroLocation+CoreDataProperties.m"; sourceTree = "<group>"; };
+		DC1FEBAF1C610B1A00AAEF2E /* OEMicroLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OEMicroLocation.h; sourceTree = "<group>"; };
+		DC1FEBB01C610B1A00AAEF2E /* OEMicroLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OEMicroLocation.m; sourceTree = "<group>"; };
+		DC1FEBB11C610B1A00AAEF2E /* OEEvent+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OEEvent+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DC1FEBB21C610B1A00AAEF2E /* OEEvent+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OEEvent+CoreDataProperties.m"; sourceTree = "<group>"; };
+		DC1FEBB31C610B1A00AAEF2E /* OEEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OEEvent.h; sourceTree = "<group>"; };
+		DC1FEBB41C610B1A00AAEF2E /* OEEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OEEvent.m; sourceTree = "<group>"; };
+		DC1FEBB51C610B1A00AAEF2E /* OESponsor+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OESponsor+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DC1FEBB61C610B1A00AAEF2E /* OESponsor+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OESponsor+CoreDataProperties.m"; sourceTree = "<group>"; };
+		DC1FEBB71C610B1A00AAEF2E /* OESponsor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OESponsor.h; sourceTree = "<group>"; };
+		DC1FEBB81C610B1A00AAEF2E /* OESponsor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OESponsor.m; sourceTree = "<group>"; };
+		DC1FEBB91C610B1A00AAEF2E /* OESpeaker+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OESpeaker+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DC1FEBBA1C610B1A00AAEF2E /* OESpeaker+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OESpeaker+CoreDataProperties.m"; sourceTree = "<group>"; };
+		DC1FEBBB1C610B1A00AAEF2E /* OESpeaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OESpeaker.h; sourceTree = "<group>"; };
+		DC1FEBBC1C610B1A00AAEF2E /* OESpeaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OESpeaker.m; sourceTree = "<group>"; };
+		DC1FEBBD1C610B1A00AAEF2E /* OESession+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OESession+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DC1FEBBE1C610B1A00AAEF2E /* OESession+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OESession+CoreDataProperties.m"; sourceTree = "<group>"; };
+		DC1FEBBF1C610B1A00AAEF2E /* OESession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OESession.h; sourceTree = "<group>"; };
+		DC1FEBC01C610B1A00AAEF2E /* OESession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OESession.m; sourceTree = "<group>"; };
+		DC1FEBC11C610B1A00AAEF2E /* OETrack+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OETrack+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DC1FEBC21C610B1A00AAEF2E /* OETrack+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OETrack+CoreDataProperties.m"; sourceTree = "<group>"; };
+		DC1FEBC31C610B1A00AAEF2E /* OETrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OETrack.h; sourceTree = "<group>"; };
+		DC1FEBC41C610B1A00AAEF2E /* OETrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OETrack.m; sourceTree = "<group>"; };
 		DC678C6F1C6076F700E9D6D6 /* OpenEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC678C731C6076F700E9D6D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DC678C751C6076F700E9D6D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -83,6 +125,41 @@
 				19BA460C2D1FE9459F980BA2 /* Pods-OpenEvent.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC1FEBA81C61091600AAEF2E /* coredata */ = {
+			isa = PBXGroup;
+			children = (
+				DC1FEBA91C610B1A00AAEF2E /* OEVersion+CoreDataProperties.h */,
+				DC1FEBAA1C610B1A00AAEF2E /* OEVersion+CoreDataProperties.m */,
+				DC1FEBAB1C610B1A00AAEF2E /* OEVersion.h */,
+				DC1FEBAC1C610B1A00AAEF2E /* OEVersion.m */,
+				DC1FEBAD1C610B1A00AAEF2E /* OEMicroLocation+CoreDataProperties.h */,
+				DC1FEBAE1C610B1A00AAEF2E /* OEMicroLocation+CoreDataProperties.m */,
+				DC1FEBAF1C610B1A00AAEF2E /* OEMicroLocation.h */,
+				DC1FEBB01C610B1A00AAEF2E /* OEMicroLocation.m */,
+				DC1FEBB11C610B1A00AAEF2E /* OEEvent+CoreDataProperties.h */,
+				DC1FEBB21C610B1A00AAEF2E /* OEEvent+CoreDataProperties.m */,
+				DC1FEBB31C610B1A00AAEF2E /* OEEvent.h */,
+				DC1FEBB41C610B1A00AAEF2E /* OEEvent.m */,
+				DC1FEBB51C610B1A00AAEF2E /* OESponsor+CoreDataProperties.h */,
+				DC1FEBB61C610B1A00AAEF2E /* OESponsor+CoreDataProperties.m */,
+				DC1FEBB71C610B1A00AAEF2E /* OESponsor.h */,
+				DC1FEBB81C610B1A00AAEF2E /* OESponsor.m */,
+				DC1FEBB91C610B1A00AAEF2E /* OESpeaker+CoreDataProperties.h */,
+				DC1FEBBA1C610B1A00AAEF2E /* OESpeaker+CoreDataProperties.m */,
+				DC1FEBBB1C610B1A00AAEF2E /* OESpeaker.h */,
+				DC1FEBBC1C610B1A00AAEF2E /* OESpeaker.m */,
+				DC1FEBBD1C610B1A00AAEF2E /* OESession+CoreDataProperties.h */,
+				DC1FEBBE1C610B1A00AAEF2E /* OESession+CoreDataProperties.m */,
+				DC1FEBBF1C610B1A00AAEF2E /* OESession.h */,
+				DC1FEBC01C610B1A00AAEF2E /* OESession.m */,
+				DC1FEBC11C610B1A00AAEF2E /* OETrack+CoreDataProperties.h */,
+				DC1FEBC21C610B1A00AAEF2E /* OETrack+CoreDataProperties.m */,
+				DC1FEBC31C610B1A00AAEF2E /* OETrack.h */,
+				DC1FEBC41C610B1A00AAEF2E /* OETrack.m */,
+			);
+			path = coredata;
 			sourceTree = "<group>";
 		};
 		DC678C661C6076F700E9D6D6 = {
@@ -156,6 +233,7 @@
 		DC678C9C1C60783900E9D6D6 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				DC1FEBA81C61091600AAEF2E /* coredata */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -339,9 +417,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC1FEBCF1C610B1A00AAEF2E /* OESession+CoreDataProperties.m in Sources */,
+				DC1FEBD11C610B1A00AAEF2E /* OETrack+CoreDataProperties.m in Sources */,
+				DC1FEBC61C610B1A00AAEF2E /* OEVersion.m in Sources */,
+				DC1FEBD21C610B1A00AAEF2E /* OETrack.m in Sources */,
+				DC1FEBC51C610B1A00AAEF2E /* OEVersion+CoreDataProperties.m in Sources */,
+				DC1FEBC91C610B1A00AAEF2E /* OEEvent+CoreDataProperties.m in Sources */,
 				DC678C7A1C6076F700E9D6D6 /* ViewController.m in Sources */,
+				DC1FEBCB1C610B1A00AAEF2E /* OESponsor+CoreDataProperties.m in Sources */,
+				DC1FEBC81C610B1A00AAEF2E /* OEMicroLocation.m in Sources */,
+				DC1FEBCD1C610B1A00AAEF2E /* OESpeaker+CoreDataProperties.m in Sources */,
+				DC1FEBC71C610B1A00AAEF2E /* OEMicroLocation+CoreDataProperties.m in Sources */,
+				DC1FEBCA1C610B1A00AAEF2E /* OEEvent.m in Sources */,
+				DC1FEBCE1C610B1A00AAEF2E /* OESpeaker.m in Sources */,
 				DC678C771C6076F700E9D6D6 /* AppDelegate.m in Sources */,
 				DC678C801C6076F700E9D6D6 /* OpenEvent.xcdatamodeld in Sources */,
+				DC1FEBCC1C610B1A00AAEF2E /* OESponsor.m in Sources */,
+				DC1FEBD01C610B1A00AAEF2E /* OESession.m in Sources */,
 				DC678C741C6076F700E9D6D6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

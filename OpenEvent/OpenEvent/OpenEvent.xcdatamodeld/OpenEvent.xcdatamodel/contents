@@ -1,14 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Automatic">
-    <entity name="OEEvent" syncable="YES">
+    <entity name="OEEvent" representedClassName="OEEvent" syncable="YES">
+        <attribute name="color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="end_time" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="slogan" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="start_time" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="sponsors" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="OESponsor" inverseName="event" inverseEntity="OESponsor" syncable="YES"/>
         <relationship name="tracks" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="OETrack" inverseName="event" inverseEntity="OETrack" syncable="YES"/>
+        <relationship name="version" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OEVersion" inverseName="event" inverseEntity="OEVersion" syncable="YES"/>
     </entity>
-    <entity name="OEMicroLocation" syncable="YES"/>
-    <entity name="OESession" syncable="YES">
+    <entity name="OEMicroLocation" representedClassName="OEMicroLocation" syncable="YES">
+        <attribute name="floor" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="identifier" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="sessions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OESession" inverseName="microlocation" inverseEntity="OESession" syncable="YES"/>
+    </entity>
+    <entity name="OESession" representedClassName="OESession" syncable="YES">
+        <attribute name="abstract" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="begin" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="end" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="format" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identifier" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="level" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subtitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="microlocation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OEMicroLocation" inverseName="sessions" inverseEntity="OEMicroLocation" syncable="YES"/>
         <relationship name="speakers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OESpeaker" inverseName="sessions" inverseEntity="OESpeaker" syncable="YES"/>
+        <relationship name="track" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OETrack" inverseName="sessions" inverseEntity="OETrack" syncable="YES"/>
     </entity>
-    <entity name="OESpeaker" syncable="YES">
+    <entity name="OESpeaker" representedClassName="OESpeaker" syncable="YES">
         <attribute name="bio" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
@@ -24,21 +53,22 @@
         <attribute name="web" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="sessions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OESession" inverseName="speakers" inverseEntity="OESession" syncable="YES"/>
     </entity>
-    <entity name="OESponsor" syncable="YES">
+    <entity name="OESponsor" representedClassName="OESponsor" syncable="YES">
+        <attribute name="identifier" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
         <attribute name="logo" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OEEvent" inverseName="sponsors" inverseEntity="OEEvent" syncable="YES"/>
     </entity>
-    <entity name="OETrack" syncable="YES">
+    <entity name="OETrack" representedClassName="OETrack" syncable="YES">
         <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="identifier" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="track_image_url" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OEEvent" inverseName="tracks" inverseEntity="OEEvent" syncable="YES"/>
+        <relationship name="sessions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OESession" inverseName="track" inverseEntity="OESession" syncable="YES"/>
     </entity>
-    <entity name="OEVersion" syncable="YES">
-        <attribute name="event_id" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    <entity name="OEVersion" representedClassName="OEVersion" syncable="YES">
         <attribute name="event_ver" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="identifier" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
         <attribute name="microlocations_ver" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
@@ -46,14 +76,15 @@
         <attribute name="speakers_ver" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="sponsors_ver" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="tracks_ver" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OEEvent" inverseName="version" inverseEntity="OEEvent" syncable="YES"/>
     </entity>
     <elements>
+        <element name="OEEvent" positionX="-36" positionY="9" width="128" height="240"/>
+        <element name="OEMicroLocation" positionX="18" positionY="63" width="128" height="135"/>
+        <element name="OESession" positionX="-54" positionY="-9" width="128" height="225"/>
         <element name="OESpeaker" positionX="-63" positionY="-18" width="128" height="255"/>
-        <element name="OESession" positionX="-54" positionY="-9" width="128" height="60"/>
-        <element name="OEEvent" positionX="-36" positionY="9" width="128" height="75"/>
-        <element name="OESponsor" positionX="-18" positionY="27" width="128" height="105"/>
-        <element name="OETrack" positionX="0" positionY="45" width="128" height="120"/>
-        <element name="OEMicroLocation" positionX="18" positionY="63" width="128" height="45"/>
+        <element name="OESponsor" positionX="-18" positionY="27" width="128" height="120"/>
+        <element name="OETrack" positionX="0" positionY="45" width="128" height="135"/>
         <element name="OEVersion" positionX="36" positionY="81" width="128" height="165"/>
     </elements>
 </model>
