@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Automatic">
+    <entity name="OEEvent" syncable="YES">
+        <relationship name="sponsors" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="OESponsor" inverseName="event" inverseEntity="OESponsor" syncable="YES"/>
+        <relationship name="tracks" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="OETrack" inverseName="event" inverseEntity="OETrack" syncable="YES"/>
+    </entity>
+    <entity name="OEMicroLocation" syncable="YES"/>
+    <entity name="OESession" syncable="YES">
+        <relationship name="speakers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OESpeaker" inverseName="sessions" inverseEntity="OESpeaker" syncable="YES"/>
+    </entity>
+    <entity name="OESpeaker" syncable="YES">
+        <attribute name="bio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="facebook" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="github" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identifier" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="linkedin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="organisation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="position" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="twitter" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="web" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="sessions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OESession" inverseName="speakers" inverseEntity="OESession" syncable="YES"/>
+    </entity>
+    <entity name="OESponsor" syncable="YES">
+        <attribute name="logo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OEEvent" inverseName="sponsors" inverseEntity="OEEvent" syncable="YES"/>
+    </entity>
+    <entity name="OETrack" syncable="YES">
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identifier" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="track_image_url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OEEvent" inverseName="tracks" inverseEntity="OEEvent" syncable="YES"/>
+    </entity>
+    <entity name="OEVersion" syncable="YES">
+        <attribute name="event_id" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="event_ver" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="identifier" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="microlocations_ver" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="session_ver" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="speakers_ver" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="sponsors_ver" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="tracks_ver" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="OESpeaker" positionX="-63" positionY="-18" width="128" height="255"/>
+        <element name="OESession" positionX="-54" positionY="-9" width="128" height="60"/>
+        <element name="OEEvent" positionX="-36" positionY="9" width="128" height="75"/>
+        <element name="OESponsor" positionX="-18" positionY="27" width="128" height="105"/>
+        <element name="OETrack" positionX="0" positionY="45" width="128" height="120"/>
+        <element name="OEMicroLocation" positionX="18" positionY="63" width="128" height="45"/>
+        <element name="OEVersion" positionX="36" positionY="81" width="128" height="165"/>
+    </elements>
+</model>
